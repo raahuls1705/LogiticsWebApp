@@ -1,0 +1,17 @@
+﻿
+.register-box {
+    width: 550px
+}
+
+@media (max-width:576px) {
+    .register-box {
+        margin-top: .5rem;
+        width: 90%
+    }
+}
+
+.register-box-msg {
+    margin: 0;
+    padding: 0 20px 20px;
+    text-align: center
+}

@@ -1,0 +1,108 @@
+﻿@{
+    Layout = null;
+}
+
+@model RegisterModel
+@inject ICountryRepository _countryRepository
+
+<div class="row">
+    <div class="col-6">
+        <div class="input-group mb-3">
+            <input asp-for="Input.FirstName" type="text" class="form-control" placeholder="First Name">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input asp-for="Input.Email" type="email" class="form-control" placeholder="Email">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input asp-for="Input.SecondaryContact" type="text" class="form-control" placeholder="Secondary Contact">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-phone"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-6">
+        <div class="input-group mb-3">
+            <input asp-for="Input.LastName" type="text" class="form-control" placeholder="Last Name">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input asp-for="Input.Phone" type="tel" class="form-control" placeholder="Phone Number">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-phone"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <select class="form-control" asp-for="Input.Capacity">
+                <option>Please select capacity</option>
+                <option value="Full Time">Full Time</option>
+                <option value="Part Time">Part Time</option>
+            </select>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-battery-half"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="input-group mb-3">
+            <input type="hidden" asp-for="Input.CountriesCoverByVendor" id="countries" />
+            <select id="dates-field2" class="multiselect-ui input-group" multiple="multiple">
+                @foreach (var c in _countryRepository.GetCountryDropDownList())
+                {
+                    <option value="@c.Value">@c.Text</option>
+                }
+            </select>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-couch"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="input-group mb-3">
+            <input asp-for="Input.Password" type="password" class="form-control" placeholder="Password">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="input-group mb-3">
+            <input asp-for="Input.ConfirmPassword" type="password" class="form-control" placeholder="Retype password">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

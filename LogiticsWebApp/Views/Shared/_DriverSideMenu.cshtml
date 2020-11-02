@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using LogiticsWebApp.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<div class="sidebar">
+    <!-- Sidebar user (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        @*<div class="image">
+                <img src="~/images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>*@
+        <div class="info">
+            <a href="#" class="d-block">Hello @User.Identity.Name!</a>
+        </div>
+    </div>
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         
+            <li class="nav-item">
+                <a href="@Url.Action("List", "Drivers", new { area="Vendor"})" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        Manage Drivers
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="@Url.Action("List", "Order", new { area="Vendor" })" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        Orders
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- /.sidebar-menu -->
+</div>
+

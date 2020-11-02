@@ -1,0 +1,123 @@
+﻿@{
+    Layout = null;
+}
+@model GridModel<DriverViewModel>
+
+<table cellpadding="0" cellspacing="0" class="table table-head-fixed table-bordered table-striped">
+    <thead>
+        <tr class="">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.List)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td class=" ">
+                    <a class="btn btn-default btn-xs" asp-action="ChangePassword" asp-route-username="@item.Email">
+                        <i class="fas fa-user-secret">
+                        </i>
+                        Change Password
+                    </a>
+                    <a class="btn btn-primary btn-xs" asp-action="Detail" asp-route-id="@item.Id">
+                        <i class="fas fa-folder">
+                        </i>
+                        View
+                    </a>
+                    <a class="btn btn-info btn-xs" asp-action="Edit" asp-route-id="@item.Id">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Edit
+                    </a>
+
+                    <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-default" onclick="setDriverId('@item.Id')">
+                        <i class="fas fa-trash">
+                        </i>
+                        Delete
+                    </button>
+
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<div class="card-footer clearfix">
+    <div class="row">
+        <div class="col-6">
+            <ul class="pagination pagination-sm m-0 float-left">
+
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-arrow-left"></i></a></li>
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+
+                    @if (i != Model.CurrentPageIndex)
+                    {
+                        <li class="page-item">
+                            <button class="page-link" onclick="pagerClick(@i);">@i</button>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <button class="page-link" onclick="pagerClick(@i);">@i</button>
+                        </li>
+                    }
+
+                }
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-arrow-right"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <div class="text-center">
+                <div class="dataTables_length">
+
+                    <div class="row">
+                        <label class="label" style="margin-top: 6px;padding-right: 6px;">Show</label>
+
+                        <select name="orders-grid_length" aria-controls="orders-grid" id="ddlRows" onchange="rowsOnchange();" class="form-control input-sm col-3">
+                            @foreach (var r in Model.AvailableRows)
+                            {
+                                if (r.Value == Model.SelectedRow)
+                                {
+                                    <option value="@r.Value" selected>@r.Text</option>
+                                }
+                                else
+                                {
+                                    <option value="@r.Value">@r.Text</option>
+                                }
+
+                            }
+                        </select>
+                        <label class="label" style="margin-top: 6px;padding-left: 6px;">Items</label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <span><label style="margin-top: 6px;padding-right: 6px;">Total Count : </label>@Model.TotalCount</span>
+            <button class="btn btn-default float-right" onclick="pagerClick();" type="button"><i class="fa fa-recycle"></i></button>
+        </div>
+    </div>
+
+</div>

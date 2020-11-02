@@ -1,0 +1,9 @@
+﻿@model NotifyDataModel
+
+@if (Model != null)
+{
+    <div id="AlertMsgInner" class="alert alert-@Model.Status alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>@Model.Status</strong> @Model.Message
+    </div>
+}

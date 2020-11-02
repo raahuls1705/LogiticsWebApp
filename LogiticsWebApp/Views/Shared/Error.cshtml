@@ -1,0 +1,26 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    Exception ex = ViewData["HandleException"] as Exception;
+}
+@*<h1>@ViewData["message"]</h1>*@
+
+@*<h2>Status Code : @ViewData["statusCode"]</h2>*@
+
+@*<div>@ViewData["stackTrace"]</div>*@
+
+
+<br />
+<div class="error-page">
+    <h2 class="headline text-danger">@ViewData["statusCode"]</h2>
+
+    <div class="error-content">
+        <h3><i class="fas fa-exclamation-triangle text-danger"></i> Oops! Something went wrong.</h3>
+
+        <p>
+            We will work on fixing that right away.
+            Meanwhile, you may <a href="/Home/Index">return to dashboard</a>
+        </p>
+
+    </div>
+</div>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Logistic Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="~/css/adminlte.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="~/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="~/css/custom-datatable.css" rel="stylesheet" />
+</head>
+<body class="hold-transition sidebar-mini layout-navbar-fixed">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <partial name="_Header" />
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="/" class="brand-link elevation-4">
+                <span class="brand-text font-weight-light">Logistic Web App</span>
+            </a>
+            <partial name="_VendorSideMenu" />
+        </aside>
+        <div class="content-wrapper">
+            <main role="main" class="middleWrapper">
+                <div class="padding-section">
+                    @if (TempData.ContainsKey("Notifications"))
+                    {
+                        <div id="NavStatusMsg">
+                            @await Component.InvokeAsync("Notification")
+                        </div>
+                    }
+                    @RenderBody()
+                </div>
+            </main>
+        </div>
+        <partial name="_Footer" />
+    </div>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.dataTables.js"></script>
+    <script src="~/js/dataTables.bootstrap.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/additional-methods.min.js"></script>
+    <script src="~/js/all.min.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    <script src="~/js/adminlte.min.js"></script>
+    <script src="~/js/demo.js"></script>
+    <script src="~/js/common-utility.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Logistic Web App| Registration Page</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/css/icheck-bootstrap.min.css">
+    <link href="~/css/adminlte.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="~/css/register-custom.css" rel="stylesheet" />
+</head>
+<body class="hold-transition register-page">
+    <div class="register-box">
+        <br />
+        <div class="card">
+            <div class="card-body register-card-body">
+                @{
+                    var role = Model.Role == "Vendor" ? "Vendor" : "Company";
+                }
+                <h2 class="login-box-msg">Register a New @role</h2>
+
+                <form asp-route-returnUrl="@Model.ReturnUrl" asp-route-role="@Model.Role" method="post">
+
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    @{
+                        var partialView = Model.Role == "Vendor" ? "_VendorRegistration" : "_CompanyRegistration";
+                    }
+
+                    <partial name="@partialView" model="Model" />
+
+                    <div class="row">
+
+                        <!-- /.col -->
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+                <a asp-page="/Account/Login" class="text-center">I already have a membership</a>
+            </div>
+            <!-- /.form-box -->
+        </div><!-- /.card -->
+    </div>
+
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/adminlte.min.js"></script>
+    <script src="~/js/all.min.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var countries = [];
+            $('.multiselect-ui').multiselect({
+                includeSelectAllOption: true,
+                maxHeight: 200,
+                buttonWidth: 465,
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true,
+                allSelectedText: 'No option left ...',
+                dropRight: true,
+                onChange: function (option, checked, select) {
+                    var value = $(option).val();
+                    if (checked) {
+                        countries.push(value);
+                    } else {
+                        countries = countries.filter(function (country) {
+                            return country !== value;
+                        });
+                    }
+                    $("#countries").val(countries);
+                },
+                onSelectAll: function (e) {
+                    countries = [];
+                    $("ul.multiselect-container li").each(function () {
+                        var input = $(this).find('input')
+                        var val = input.attr('value');
+                        if (val !== undefined && val !== 'multiselect-all') {
+                            countries.push(val);
+                        }
+
+                    });
+                    $("#countries").val(countries);
+                },
+                onDeselectAll: function () {
+                    countries = [];
+                    $("#countries").val(countries);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

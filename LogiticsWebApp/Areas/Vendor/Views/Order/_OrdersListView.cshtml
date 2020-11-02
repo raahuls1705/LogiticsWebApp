@@ -1,0 +1,138 @@
+﻿@{
+    Layout = null;
+}
+@model GridModel<OrderViewModel>
+@using LogiticsWebApp.Utilities.Enums
+<table cellpadding="0" cellspacing="0" class="table table-head-fixed table-bordered table-striped table-responsive">
+    <thead>
+        <tr class="">
+
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Location</th>
+            <th>Order Number</th>
+            <th>Tracking Number</th>
+            <th>Status</th>
+            <th>Payment Detail</th>
+            <th>Shipping Detail</th>
+            @*<th>Actions</th>*@
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.List.Count() > 0)
+        {
+            foreach (var item in Model.List)
+            {
+                <tr>
+
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Phone)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Location)</td>
+                    <td>@Html.DisplayFor(modelItem => item.OrderNumber)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TrackingNumber)</td>
+                    @{
+                        var statusColor = "";
+                        if (item.Status == OrderStatus.Completed)
+                        {
+                            statusColor = "green";
+                        }
+                        else if (item.Status == OrderStatus.Cancelled)
+                        {
+                            statusColor = "red";
+                        }
+                        else if (item.Status == OrderStatus.Pending)
+                        {
+                            statusColor = "yellow";
+                        }
+                        else
+                        {
+                            statusColor = "blue";
+                        }
+                    }
+                    <td><span class="grid-report-item @statusColor">@Html.DisplayFor(modelItem => item.Status)</span></td>
+                    <td>@Html.DisplayFor(modelItem => item.PaymentDetail)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ShippingDetail)</td>
+                    @*<td class="">
+
+                            <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-default" onclick="setDriverId('@item.Id')">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </button>
+
+                        </td>*@
+
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="10"><h5 class="text-center">No data found....</h5></td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+<div class="card-footer clearfix">
+    <div class="row">
+        <div class="col-6">
+            <ul class="pagination pagination-sm m-0 float-left">
+
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-arrow-left"></i></a></li>
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+
+                    @if (i != Model.CurrentPageIndex)
+                    {
+                        <li class="page-item">
+                            <button class="page-link" onclick="pagerClick(@i);">@i</button>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <button class="page-link" onclick="pagerClick(@i);">@i</button>
+                        </li>
+                    }
+
+                }
+                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-arrow-right"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <div class="text-center">
+                <div class="dataTables_length">
+
+                    <div class="row">
+                        <label class="label" style="margin-top: 6px;padding-right: 6px;">Show</label>
+
+                        <select name="orders-grid_length" aria-controls="orders-grid" id="ddlRows" onchange="rowsOnchange();" class="form-control input-sm col-3">
+                            @foreach (var r in Model.AvailableRows)
+                            {
+                                if (r.Value == Model.SelectedRow)
+                                {
+                                    <option value="@r.Value" selected>@r.Text</option>
+                                }
+                                else
+                                {
+                                    <option value="@r.Value">@r.Text</option>
+                                }
+
+                            }
+                        </select>
+                        <label class="label" style="margin-top: 6px;padding-left: 6px;">Items</label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <span><label style="margin-top: 6px;padding-right: 6px;">Total Count : </label>@Model.TotalCount</span>
+            <button class="btn btn-default float-right" onclick="pagerClick();" type="button"><i class="fa fa-recycle"></i></button>
+        </div>
+    </div>
+
+</div>
