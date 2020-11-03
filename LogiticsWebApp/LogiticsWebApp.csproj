@@ -6,9 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Factories\**" />
     <Compile Remove="Pages\Manage\**" />
+    <Content Remove="Factories\**" />
     <Content Remove="Pages\Manage\**" />
+    <EmbeddedResource Remove="Factories\**" />
     <EmbeddedResource Remove="Pages\Manage\**" />
+    <None Remove="Factories\**" />
     <None Remove="Pages\Manage\**" />
   </ItemGroup>
 
@@ -44,7 +48,6 @@
     <Folder Include="Areas\Driver\Views\Shared\" />
     <Folder Include="Areas\Vendor\Data\" />
     <Folder Include="Areas\Vendor\Views\Shared\" />
-    <Folder Include="Factories\" />
   </ItemGroup>
 
   <ItemGroup>

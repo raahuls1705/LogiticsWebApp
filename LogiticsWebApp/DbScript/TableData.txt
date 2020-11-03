@@ -1,0 +1,822 @@
+﻿USE [LogisticWebApp]
+GO
+INSERT [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp]) VALUES (N'028df9c8-b9ed-4966-b7f0-1542ea122b0f', N'CompanyOwner', N'COMPANYOWNER', N'991e8451-f963-490b-8950-8b527410c148')
+GO
+INSERT [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp]) VALUES (N'09c7b669-f2d9-40fc-8f12-3673694d5b45', N'Admin', N'ADMIN', N'1a2b1ad8-dc69-4e15-b2cc-a2ef872602dc')
+GO
+INSERT [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp]) VALUES (N'55423fc9-2447-4d78-9fdc-8f9725915a5d', N'Vendor', N'VENDOR', N'1ff7832b-0310-43eb-ad6a-98767c30c242')
+GO
+INSERT [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp]) VALUES (N'63c02a46-036f-4225-8e4a-894e34a3cf1d', N'Driver', N'DRIVER', N'50e6d32f-0eaa-465d-85af-cf5d0ad4f5f1')
+GO
+INSERT [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp]) VALUES (N'ade5d63d-893d-46bd-ad44-f978279c1810', N'Customer', N'CUSTOMER', N'a143aaaf-c6b8-4dcc-b777-d0dc2cd297fc')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'03d69d77-d545-430d-a1cf-7ab5bb6e531f', N'admin@logistic.com', N'ADMIN@LOGISTIC.COM', N'admin@logistic.com', N'ADMIN@LOGISTIC.COM', 1, N'AQAAAAEAACcQAAAAEGG0ACXA2A/UcO2RAuz3Q4xgr+wABttKQlitzCvtIf2Hi+Lr/k9iDRfp+hBw21KjeQ==', N'2YTIEVVBVFG2BLO5P3B4VA2EG3IZ4QWZ', N'c0092ae2-1c37-4f06-92b7-e6d1dc1dc083', NULL, 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'0639ed7d-d014-4903-97f3-6503f0f35e1c', N'v3434@g.com', N'V3434@G.COM', N'v3434@g.com', N'V3434@G.COM', 1, N'AQAAAAEAACcQAAAAEOEXUkrSp5yAAiFFhio69ZB1oLuq/whjoo1vG1l5/ynIZ4dC8nIGq4vx0SI0kHBb5w==', N'NF7C5K6FAN64SSUZ74YXF6GLS2GI54ZH', N'24ee3c68-45da-462c-9b2f-010969fc923a', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'07938cc6-f68f-46bd-8caa-5ca8686a5f37', N'v@g.com23455', N'V@G.COM23455', N'v@g.com23455', N'V@G.COM23455', 1, N'AQAAAAEAACcQAAAAEMrtsr7e0dW9wknTKCsvmNoJsYgDB7PiI80Lo+NQdNXlNWgohEK66TjM+FunXma+QQ==', N'IBWVMOVM556CIDKLWYZHM3YPFI7O262U', N'2af36326-e5ec-4fd4-b369-ba31af7cbc05', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'0e7903eb-e2f8-44a0-9bb6-84a341524247', N'TestRegister3@test.com', N'TESTREGISTER3@TEST.COM', N'TestRegister3@test.com', N'TESTREGISTER3@TEST.COM', 1, N'AQAAAAEAACcQAAAAEC+A1iGie39I2YVcnewQOKqAIxGk1wk2YtWv4LV3Dna4LG1YYz2mboCRovkBttEtpg==', N'4XUK23JUB5EWOSOBHDODNH5XLVKOLHNG', N'e0b40a57-3b85-4699-9960-d60c96cd0c7b', N'333333333', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'333333333', N'Test', N'Register#3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'16f20fad-5f27-44ef-af46-55a95f78820a', N'v33@g.com', N'V33@G.COM', N'v33@g.com', N'V33@G.COM', 1, N'AQAAAAEAACcQAAAAEH2fY1q5a6KfkRv+0RH+SBGBtjJUbujyWWfduGH58j4ckdZWC1GfPKZmKiMhfZmtCg==', N'UVCFYAORI2ULABXO2U2N4X75UT5S3AU7', N'5dc023d7-95ab-48cc-9225-ff6ef3d34fa4', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'18895605-7b5e-419a-83bf-ed2d7b782f56', N'TestRegister4@test.com', N'TESTREGISTER4@TEST.COM', N'TestRegister4@test.com', N'TESTREGISTER4@TEST.COM', 1, N'AQAAAAEAACcQAAAAEH9393pIT/6J5fWhzI8adcsNHSFBGQ4nhOnK3k4oFVo7Oz4uPndRDdL7sbVmpvak1w==', N'JZNN2HZL4DZ6A6QJ25GWA5PD23E5FVJD', N'f9eff252-faa6-4ff2-9c90-fbaea8eedf57', N'444444444', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'444444444', N'Test', N'Register#4', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'198585b9-f4cb-406d-97d3-57acda61300e', N'TestRegister2@test.com', N'TESTREGISTER2@TEST.COM', N'TestRegister2@test.com', N'TESTREGISTER2@TEST.COM', 1, N'AQAAAAEAACcQAAAAEEcCC1pVf+VR816jDfqnMAyGWJcNDd0YCl2GcB7dB5ZTLezh+tc3qJETEi+do6m0EA==', N'OS65G7L7W7PMSPCZBKVST2OAUXROF3JH', N'4a64f70d-a77f-4ebe-9772-252394598cf7', N'222222222', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'222222222', N'Test', N'Register#2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'20566e48-d54c-47f5-b995-12084971ced8', N'v234@g.com', N'V234@G.COM', N'v234@g.com', N'V234@G.COM', 1, N'AQAAAAEAACcQAAAAELPhpVA0wFN49zJw9FBjauHTWSpE1smc7bgUSElPFXYgi5UM8TrXh9ARdkq7s6+8IQ==', N'SUZKS34QZJ5HK6P4YYIQXE47JSBNGKLS', N'd11d3ddb-3f44-4675-a148-903752f20706', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'24f46493-33ae-499d-a3cd-904ebed333c9', N'v@g.com', N'V@G.COM', N'v@g.com', N'V@G.COM', 1, N'AQAAAAEAACcQAAAAEGThue1tqj63JO0gEAfzr/h6o88P592YN6v7mpo0o+U+W6EGRpeu0QQmBoPu/yE+/Q==', N'LA5FOOCOXYKF6M2ENSFMXS6VUXXHSYWJ', N'06b57f2e-e54f-40ce-a7ea-3727d23f1e04', NULL, 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'3909cd6c-2a25-4b69-bd54-524b0215e602', N'test232334@test.coml', N'TEST232334@TEST.COML', N'test232334@test.coml', N'TEST232334@TEST.COML', 1, N'AQAAAAEAACcQAAAAEPyfVT8URDPpgvzlz1NQmpoxcBjlFlFnJ11DreWpg6+5MHkG6oKkUiDyZJSR0SRrEQ==', N'QZ2YYUF5KKLWR6UHJ2FAHVX3BL6TG64D', N'61f8c55f-885f-41f4-86de-5a402d9ce084', N'4039734821', 0, 0, NULL, 1, 0, N'test', N'439 Shawbrooke', N'tett', N'M1R 0E9', NULL, N'4039734821', N'test', N'test', N'test', 1, N'test', N'test', 0, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'3e8ab50f-5de0-49f2-b9b1-d24dde294bea', N'222v@g.com', N'222V@G.COM', N'44v@g.com', N'44V@G.COM', 1, N'AQAAAAEAACcQAAAAEGgs8rMxc7oiVwW72VWCnwjWlPZ1lLY+gDnFwzB8BrrK2n3raNyT6S9LmCn8ziXp3Q==', N'EJRJ3HKZH3AQRWXHU54FUWSCIEGI75UE', N'4b68802c-c2c9-4450-89e1-958b4ca8364f', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'testUpdate', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'46bd69fb-d17c-4faa-9228-6ccc28605f8e', N'xxxxxv@g.com', N'XXXXXV@G.COM', N'xxxxxv@g.com', N'XXXXXV@G.COM', 1, N'AQAAAAEAACcQAAAAEJvTrNp1mwV5eIgpuHo6bVFXPIAq1i2uqvmOzkq8oFyrUYoj3+jpN4Ue4n9QY5bQZg==', N'P25NCGT6UBFIKNRM6QTJPGEWNKQW3YNP', N'ba4fec5d-acb9-430d-ab11-38326c2ad644', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'vendor@test.com', N'VENDOR@TEST.COM', N'vendor@test.com', N'VENDOR@TEST.COM', 1, N'AQAAAAEAACcQAAAAEDj/5YJmj2jkGGB/W3zoCfvsGzBQ4hOyOZzcdA6SuzC1saUCrpeGJMQX0+DZSDNCSw==', N'Q224HG7NCYQS2PR6ZAHWTEXK2H5RSLAW', N'0b879c3e-d4cf-4f01-b336-75b97ef20ade', N'test88888', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'test88888', N'test', N'rest', NULL, 0, NULL, NULL, 0, N'Full Time', N'1,2', N'6666666666')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'53d1a44e-9f82-4446-a45c-0d30d1e7dec5', N'4w3@g.com', N'4W3@G.COM', N'44v@g.com', N'44V@G.COM', 1, N'AQAAAAEAACcQAAAAEMU12vPVgulHr1r5E1EG1mmf3xYxVF/tsCgcf6wayMzYeltf2/Bdmyfxi3WNfMYiXA==', N'MRPV5JDDOH2UIJNC4TRCJVRVXKAMO7XU', N'6e344cb8-ef73-42f3-a7c3-023ab11a1afb', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'540b335a-7ded-4665-a54b-d83f37372ac2', N'vw22@g.com', N'VW22@G.COM', N'vw22@g.com', N'VW22@G.COM', 1, N'AQAAAAEAACcQAAAAENlJsM2Z6as2IcvCAZ1wgur9+z4EH2gd/4Oz8KlD7UPjHWv3pvJIITKKXv+013r5NQ==', N'YVTQCD5YFTBJ3W7BVKO6A6XOB6UP64IM', N'7d1ebca2-c82a-4e1a-a8e6-65d565beffe0', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'6ef96af4-bf61-491c-8102-10e3adff5c5f', N'v2@g.com', N'V2@G.COM', N'v2@g.com', N'V2@G.COM', 1, N'AQAAAAEAACcQAAAAEKUAUHHPuyLoPundT8utGL2BeO9dckPfaE0cSg4IZX/OH7Zp8mPw1jdWMhw6/rr4AA==', N'JLJJGIVTJ5T4IPNUAO4MP4QAMZSH4VVB', N'2c74d3e0-edbc-48f1-b068-da07970b6625', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'6efa6032-b718-48c3-9329-affb3f7df515', N'vikrant@gmail.com', N'VIKRANT@GMAIL.COM', N'vikrant@gmail.com', N'VIKRANT@GMAIL.COM', 1, N'AQAAAAEAACcQAAAAEJSrybDdIhn6Go9CzxiybX8IogNXrPQ7MVCK8iCoZ6bKGt/rOKf7b97DePKsVwzyCw==', N'YWXNR353CQZ3LB3JHC6SF5CWA22654GT', N'73d0e109-8b69-469f-b4b7-b42458539683', N'7412589630', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'7412589630', N'gudda', N'gmail', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'736f3d11-ef52-4970-b954-f7bef330710b', N'company@test.com', N'COMPANY@TEST.COM', N'company@test.com', N'COMPANY@TEST.COM', 1, N'AQAAAAEAACcQAAAAEH8HMQtaTrpLb0aAqVS2FPzDgUIFSkfKdwuXefhPh/tMrrd/I6YHSL9uI1ay30OnNA==', N'OJSJFCTBCTB2CYYR3AKF3WQ5OVRIGTCV', N'e8cc0246-7c8e-45fb-9d66-0665f5dbe3a1', N'3901395', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'3901395', N'Test', N'Company', NULL, 0, NULL, NULL, 0, N'Part Time', N'1', N'22222')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'766eb695-2b44-4a4f-9123-f7431654b42a', N'TestVendor1@test.com', N'TESTVENDOR1@TEST.COM', N'TestVendor1@test.com', N'TESTVENDOR1@TEST.COM', 1, N'AQAAAAEAACcQAAAAEPvyNi9pOdK/zydKs7nw89Gf9ZBLrmiI3ukJyg69lEx/hRDICZ9fGoZ1IjTb0HbLGA==', N'ZFFVA72TZOZWBBPB4B6A6JKKDLGOYOF6', N'67e847b7-e205-4eba-a1f3-ab16867b04d4', N'111111111', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'111111111', N'Test', N'Vendor#1', NULL, 0, NULL, NULL, 0, N'Full Time', N'1', N'222222222')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'8181e444-8430-427e-8e41-2f3707800b76', N'tes47t@test.coml', N'TES47T@TEST.COML', N'tes47t@test.coml', N'TES47T@TEST.COML', 1, N'AQAAAAEAACcQAAAAEMms8rz+A7SfYoRHk1oNn/vEyHJFaq9MkqTu4IRn/ejx7nFnWzM2Y5pL5NpCU0XDTg==', N'5C4HYQ5SXJ4MGLKQYOMO352RFXBFLHBZ', N'f448b8af-5564-4ea8-ab2f-212993963500', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, 0, NULL, NULL, 0, N'Full Time', N'1', NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'82c3b0d0-1769-47b9-b2dc-b0c30d111442', N'test@test.coml', N'TEST@TEST.COML', N'test@test.coml', N'TEST@TEST.COML', 1, N'AQAAAAEAACcQAAAAEIZZ9/24KLqZFq3ulvB5hLe/iYZVE1i807Ir2Ao1FIGgRHWMVG7DeLNhLMn8KRoVqA==', N'YGYDRB6SGRPL3NJNVZEWOHEPWTDVDQKT', N'0f219a91-97d7-49ce-9be1-dcf007f2be51', NULL, 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'tetst', N'test', N'test', NULL, NULL, NULL, NULL, NULL, N'Full Time', N'1', N't')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'8931d5c0-2eec-4655-b75e-e9302153bd94', N'TestCompany1@test.com', N'TESTCOMPANY1@TEST.COM', N'TestCompany1@test.com', N'TESTCOMPANY1@TEST.COM', 1, N'AQAAAAEAACcQAAAAEKHT90V/bijfcjCjplOeefLopw0MDDxsxXvLSp0niJQIIx1lBEG+ZqnHzDZKM/RZWQ==', N'AAJFRRJRX6PSCTVETSWIHCQYDNCCXOA2', N'c2b07d4e-ffbb-4376-a7cf-d85a421f0e50', N'3901395', 0, 0, NULL, 1, 0, N'TestCompany#1', N'13 Company Street', N'Company Town', N'1203810', NULL, N'3901395', N'Company', N'Register#1', N'Engineer', 0, N'Registration was bad', N'This is much easier', 0, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'91a9aba7-a208-4063-bb44-47af9d1f5625', N'v@4g.com', N'V@4G.COM', N'v@4g.com', N'V@4G.COM', 1, N'AQAAAAEAACcQAAAAEMrDrUa833kwDVQE3mITC28gH6r71Vl3OJ4rX1MtbZUcT/v//DCkK03Flt4U800O1g==', N'K3M2RSFWFNJGN3VZHMJ44YHT7PEQHRIQ', N'98c25d98-39d3-4218-8f17-9ca9c44f91d8', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'aaf82030-b13f-49d9-84ba-e25ede603ef8', N'v@g.com233', N'V@G.COM233', N'v@g.com233', N'V@G.COM233', 1, N'AQAAAAEAACcQAAAAEJEX9mKPy3Bp3+UVkKzxQX4kQerX4P1wAQA5EbDe4hsGo4vRUx1i2S/nA7FImJlZFA==', N'6IXXFK7DPJM2H5FKAYYPX467B76NITZG', N'760336ed-3171-4079-b4d1-3a3e718cd3ba', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'ac0713af-5eb6-421f-aceb-7a7d628a911e', N'v22@g.com', N'V22@G.COM', N'v22@g.com', N'V22@G.COM', 1, N'AQAAAAEAACcQAAAAED6bjO7wHVQoLLpJVbmvCB1k3msxXAp9IZc3r7RBOHv8hbTXPQVHLv6xsD33KX2fcw==', N'J6SGOTN425W3TWZ6CANSY6H4KCK65KJS', N'e637d49e-f947-4913-82ce-41bc1bba5dad', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'ac92b9d3-d203-45a6-a05f-924341f05bd0', N'testvendor2@test.com', N'TESTVENDOR2@TEST.COM', N'testvendor2@test.com', N'TESTVENDOR2@TEST.COM', 1, N'AQAAAAEAACcQAAAAEMkGD8/XU2DGobDzpumujaalbMbCRLhIeY7mDAItqgb/56Omcv+nDdFB4p/LDOE/HQ==', N'VVCQZWCV3SK2WQPE7IIE5NBWZFOY6HCX', N'6a2ca016-9e52-48c9-bbca-c79c1e1b29f1', N'111111111', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'111111111', N'Test', N'Vendor', NULL, 0, NULL, NULL, 0, N'Please select capacity', N'2', N'111111111')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'b1aab49d-941f-4f77-b942-ff8ea62ff1e1', N'fkfk@df.com', N'FKFK@DF.COM', N'fkfk@df.com', N'FKFK@DF.COM', 1, N'AQAAAAEAACcQAAAAEDoSh0VhCBJcsvF74nh0Gqz9Rrrv6SzuBcCQAHNvEx1ELoYzqqPXhCnqbELszR11DQ==', N'A3U2XJFN4MIKVNS6OJI673BQ3DCNPSE2', N'da6f098a-9a5e-4227-a4d7-fea4d1bc7d65', NULL, 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'545454', N'kdkk', N'45454', NULL, NULL, NULL, NULL, NULL, N'Full Time', N'1', N'484545`')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'b6b58ebd-46dc-4aa0-bc9a-a7bdfac9d8d2', N'akeem06@gmail.com', N'AKEEM06@GMAIL.COM', N'akeem06@gmail.com', N'AKEEM06@GMAIL.COM', 1, N'AQAAAAEAACcQAAAAEBuAqBidO0he5l1Jvctdbc3QhhSKgzDsrgj4Ln4YQnFoeBz2agGzbX4eC6U2FTJ/bQ==', N'CNUTEQR5XXZVG5LVJRJF5TQXCN5TXIGZ', N'01cd79f9-02b5-44c6-92b0-348904037f50', N'8683183319', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'8683183319', N'Akeem', N'Deare', NULL, 0, NULL, NULL, 0, N'Please select capacity', N'1', NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'bec04a67-3ea8-41ae-9730-f8bd727da62c', N'test2323test@gmail.com', N'TEST2323TEST@GMAIL.COM', N'test2323test@gmail.com', N'TEST2323TEST@GMAIL.COM', 1, N'AQAAAAEAACcQAAAAEBMLdiNCZGuD3YFe34yDqqiZnDe43rr7Q/pU6QwOiS7TO43YAuCncyH3vV2cd2zxKA==', N'WJQ2D4UYIGQQ322E5D6DTUX5TTJKNRHE', N'76fb08cc-ff77-42a3-bdba-19f7d3d6efc5', N'55226999', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'55226999', N'test', N'testttt', NULL, 0, NULL, NULL, 0, N'Full Time', N'1', N'545454545454')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'bf0d065c-9666-4ae3-8073-86bc2b36816b', N'4747477test@test.coml', N'4747477TEST@TEST.COML', N'4747477test@test.coml', N'4747477TEST@TEST.COML', 1, N'AQAAAAEAACcQAAAAEJX9FrHeNlvP72U1WzS0YBENHI/l+1K40r0QBckBkmj5icFovWxPDazxPy1Vl+UgaQ==', N'I3Q4CPNNQ6RBOFAXMMYC42UEGODLMZZ2', N'152000d0-56fb-409b-ae3b-69e04b0dd7b7', N'4039734821', 0, 0, NULL, 1, 0, N'test', N'439 Shawbrooke', N'test', N'M1R 0E9', NULL, N'4039734821', N'test', N'test', N'test', 3, N'test', N'tetst', 1, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'c3cd9e09-9836-4f73-a01b-110c299b87f2', N'v@g.3com', N'V@G.3COM', N'v@g.3com', N'V@G.3COM', 1, N'AQAAAAEAACcQAAAAEDocKbaxhUx6dGkn7butRaP1ixitJ5LKha28awWAnb1x0d9eKGlar2ln/N7jtUHKSQ==', N'TG4SQFFOYWX2FTMR65T65J3EOW5ATUMU', N'6e1b57bf-a7a6-480e-ba83-59e782c43bf2', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'cd0a2277-1daf-4bc0-8d6b-dcd00364ce7f', N'testoct@gmail.com', N'TESTOCT@GMAIL.COM', N'testoct@gmail.com', N'TESTOCT@GMAIL.COM', 1, N'AQAAAAEAACcQAAAAEMU46FPURypnyJD8k8+DyebFiZz1Gr/i37gj5W58a0aC8u4opJO1jOPRXUuN9k+cog==', N'7BOJP54D2I52QQEJNHJ67JDGYXT6H72I', N'38e37c82-7a77-4204-bd23-7778fd185814', N'77777777888', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'77777777888', N'30', N'october', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'cd60057f-622c-4faa-a6ca-a402d4927d18', N'vendor1@gmail.com', N'VENDOR1@GMAIL.COM', N'vendor1@gmail.com', N'VENDOR1@GMAIL.COM', 1, N'AQAAAAEAACcQAAAAEA4/4DhmDnif3HDob/WsFuc2at5B8LZ9ZS/nz3lTn4MT6btrUxmRICreznKBlRztCg==', N'6GVD7WGEOKC67B3ROTNWM7U46AMZOPMK', N'307ce42b-d668-4992-a243-3af8d12359e2', N'1111111', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'1111111', N'Test', N'Vendor', NULL, 0, NULL, NULL, 0, N'Full Time', N'217', N'2222222')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'd15e6d7e-8230-411b-960d-65099dc0e648', N'vwwww@g.com', N'VWWWW@G.COM', N'vwwww@g.com', N'VWWWW@G.COM', 1, N'AQAAAAEAACcQAAAAENXm7cmYAzNydAY0IpQl1j3GbZdCiRGTphlqizdrSCbb4BXJAChexcNpircVo/rvfw==', N'PRINLSCDDTC7SORO3ZKUFZPQZLRIQD6P', N'ae94113f-cb70-4df8-bad2-c89e424f7613', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'd7d3f325-dd23-47ec-b1d4-bb2598ff72f2', N'tes4t@test.coml', N'TES4T@TEST.COML', N'tes4t@test.coml', N'TES4T@TEST.COML', 1, N'AQAAAAEAACcQAAAAEMr0nzczNiY7mOW3n2NbEBUuke2BNy7iAiOGgUNLMbIq3bbOniL7Yu9qUh059XBqyg==', N'6TYSBD7XQSEDB57PRJUDGZAHLOQ32ERI', N'51ecdafb-fe63-45ef-921f-5b0a9b388937', N'4039734821', 0, 0, NULL, 1, 0, N'test', N'test', N'test', N'M1R 0E9', NULL, N'4039734821', N'test', N'test', N'test', 2, N'test', N'test', 1, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'd87b4820-3e52-429a-b498-592cc0434617', N'v1@g.com', N'V1@G.COM', N'v2@g.com', N'V2@G.COM', 1, N'AQAAAAEAACcQAAAAEB4xldd7xnQujbODx1JbmY+1Qlm4W4Z8cBb2m0fq8ZUMaorKYk8+GsQ1hr/bYoGzqQ==', N'3BS6CTDOIWUCG7XANSBSDQXLVGK5EKKW', N'2b44b425-5410-43b3-9f29-082d60c11cc1', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'dbb71f34-5320-4e3d-81c2-cab30eb9f083', N'v3@g.com', N'V3@G.COM', N'v3@g.com', N'V3@G.COM', 1, N'AQAAAAEAACcQAAAAEHnk3G8UEDqkNK/MqR4G/ugXEcidRVmF7or+4xaRhwP8Y4eBNEm8RrBS5oe42VwUVA==', N'2F22E65GTADNANEL6HGJIRSN225VBF7O', N'acb43eec-30ad-49eb-bfbd-528b11c498b8', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'deb97f98-c47c-4b1d-a5f0-d2a6d28b87de', N'v343434@g.com', N'V343434@G.COM', N'v343434@g.com', N'V343434@G.COM', 1, N'AQAAAAEAACcQAAAAEJGyp+OLLTTV3/DIzALn/MFMLZXKtrZyuLtjmqYDqtHiPDEocdekDu85olKqpNq1Ug==', N'Z7IDVZQ3Q35KN4PWSJUWZUSGSWUN43QG', N'747b30f4-0f1c-4b4b-811f-1bce67c8e839', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'e020ddc8-73a5-4596-a042-93786648df6e', N'44v@g.com', N'44V@G.COM', N'44v@g.com', N'44V@G.COM', 1, N'AQAAAAEAACcQAAAAEDNBxUTRl8pR7NMwjQy6n2KTMgciUpJizUTNJuwr1t1W6KTzGM03/B/l/b87UBPjVQ==', N'MI4SVTAM5VBMV75CBZFHAZBFPERKMOP6', N'33a23300-66aa-48a6-86fc-32d70bcfe393', N'4039734821', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'4039734821', N'test', N'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'e226e2ae-7801-4826-a2b5-afe302c16289', N'5500000test@test.coml', N'5500000TEST@TEST.COML', N'5500000test@test.coml', N'5500000TEST@TEST.COML', 1, N'AQAAAAEAACcQAAAAELp9amti1brlDACTiBK/9ALwhLF2vEAlacuc1H2xvrxJO/SrPXFhOHUcIzeuW/9tMw==', N'NJJTLWYVW4Q5QZXFPV2OHDJIWPDDWCKZ', N'abf8d6da-5603-4c3c-9c47-b99be286691e', N'484515112', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'484515112', N'tetetet', N'2255', NULL, 0, NULL, NULL, 0, N'Part Time', N'1', N'445448')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'e32b686c-bbc1-439f-a4f9-684c449d1bc8', N'test@test.com', N'TEST@TEST.COM', N'test@test.com', N'TEST@TEST.COM', 1, N'AQAAAAEAACcQAAAAEOS2CCwEdBKM4A8pmRHOREJC9nZn2/BYBpkWiazZIA8tudCtVgEi1EZ+CJW4d/lyFA==', N'22Z2TFEFNS43N2RD66XIRJXR5RM6JTWI', N'387c14a5-5e2d-46e0-ac06-f0e5b90a4d96', NULL, 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'test', N'test', N'test', NULL, NULL, NULL, NULL, NULL, N'Full Time', N'1,2', N'test')
+GO
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], [AccessFailedCount], [CompanyName], [Address], [City], [PostalCode], [Country], [Phone], [FirstName], [LastName], [JobTitle], [CompanySizeId], [CurrentProcessDescription], [CurrentProcessChallenges], [IndustryTypeId], [Capacity], [CountriesCoverByVendor], [SecondaryContact]) VALUES (N'e3c5f023-56de-4f56-b531-610832fa1a57', N'TestRegister1@test.com', N'TESTREGISTER1@TEST.COM', N'TestRegister1@test.com', N'TESTREGISTER1@TEST.COM', 1, N'AQAAAAEAACcQAAAAELl4222XSIizEJJxkx4K6qQySys7J/uxqyiVLk4A/pU/eq0R3+wgJDLCtERztrzNxg==', N'FEOAXBSILFZ5U3XJ3XERHLMZ6TUXS6SX', N'e3c18eef-cec8-4786-be50-7d6b3629f123', N'111111111', 0, 0, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL, N'111111111', N'Test', N'Register#1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'8931d5c0-2eec-4655-b75e-e9302153bd94', N'028df9c8-b9ed-4966-b7f0-1542ea122b0f')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'bf0d065c-9666-4ae3-8073-86bc2b36816b', N'028df9c8-b9ed-4966-b7f0-1542ea122b0f')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'd7d3f325-dd23-47ec-b1d4-bb2598ff72f2', N'028df9c8-b9ed-4966-b7f0-1542ea122b0f')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'03d69d77-d545-430d-a1cf-7ab5bb6e531f', N'09c7b669-f2d9-40fc-8f12-3673694d5b45')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'24f46493-33ae-499d-a3cd-904ebed333c9', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'736f3d11-ef52-4970-b954-f7bef330710b', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'766eb695-2b44-4a4f-9123-f7431654b42a', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'82c3b0d0-1769-47b9-b2dc-b0c30d111442', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'ac92b9d3-d203-45a6-a05f-924341f05bd0', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'b1aab49d-941f-4f77-b942-ff8ea62ff1e1', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'b6b58ebd-46dc-4aa0-bc9a-a7bdfac9d8d2', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'cd60057f-622c-4faa-a6ca-a402d4927d18', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'e226e2ae-7801-4826-a2b5-afe302c16289', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'e32b686c-bbc1-439f-a4f9-684c449d1bc8', N'55423fc9-2447-4d78-9fdc-8f9725915a5d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'0639ed7d-d014-4903-97f3-6503f0f35e1c', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'07938cc6-f68f-46bd-8caa-5ca8686a5f37', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'0e7903eb-e2f8-44a0-9bb6-84a341524247', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'16f20fad-5f27-44ef-af46-55a95f78820a', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'18895605-7b5e-419a-83bf-ed2d7b782f56', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'198585b9-f4cb-406d-97d3-57acda61300e', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'20566e48-d54c-47f5-b995-12084971ced8', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'3e8ab50f-5de0-49f2-b9b1-d24dde294bea', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'46bd69fb-d17c-4faa-9228-6ccc28605f8e', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'53d1a44e-9f82-4446-a45c-0d30d1e7dec5', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'540b335a-7ded-4665-a54b-d83f37372ac2', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'6ef96af4-bf61-491c-8102-10e3adff5c5f', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'6efa6032-b718-48c3-9329-affb3f7df515', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'91a9aba7-a208-4063-bb44-47af9d1f5625', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'aaf82030-b13f-49d9-84ba-e25ede603ef8', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'ac0713af-5eb6-421f-aceb-7a7d628a911e', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'c3cd9e09-9836-4f73-a01b-110c299b87f2', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'cd0a2277-1daf-4bc0-8d6b-dcd00364ce7f', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'd15e6d7e-8230-411b-960d-65099dc0e648', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'd87b4820-3e52-429a-b498-592cc0434617', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'dbb71f34-5320-4e3d-81c2-cab30eb9f083', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'deb97f98-c47c-4b1d-a5f0-d2a6d28b87de', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'e020ddc8-73a5-4596-a042-93786648df6e', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'e3c5f023-56de-4f56-b531-610832fa1a57', N'63c02a46-036f-4225-8e4a-894e34a3cf1d')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'00000000000000_CreateIdentitySchema', N'3.1.8')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20201008152209_CreateLogTable', N'3.1.8')
+GO
+SET IDENTITY_INSERT [dbo].[CompanySize] ON 
+GO
+INSERT [dbo].[CompanySize] ([Id], [Name]) VALUES (1, N'1-5')
+GO
+INSERT [dbo].[CompanySize] ([Id], [Name]) VALUES (2, N'5-25')
+GO
+INSERT [dbo].[CompanySize] ([Id], [Name]) VALUES (3, N'25-50')
+GO
+INSERT [dbo].[CompanySize] ([Id], [Name]) VALUES (4, N'50-100')
+GO
+INSERT [dbo].[CompanySize] ([Id], [Name]) VALUES (5, N'100-500')
+GO
+INSERT [dbo].[CompanySize] ([Id], [Name]) VALUES (6, N'500-1000')
+GO
+INSERT [dbo].[CompanySize] ([Id], [Name]) VALUES (7, N'1000+')
+GO
+SET IDENTITY_INSERT [dbo].[CompanySize] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Country] ON 
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (1, N'United States', N'US', N'USA', 840, 1)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (2, N'Canada', N'CA', N'CAN', 124, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (3, N'Afghanistan', N'AF', N'AFG', 4, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (4, N'Albania', N'AL', N'ALB', 8, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (5, N'Algeria', N'DZ', N'DZA', 12, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (6, N'American Samoa', N'AS', N'ASM', 16, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (7, N'Andorra', N'AD', N'AND', 20, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (8, N'Angola', N'AO', N'AGO', 24, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (9, N'Anguilla', N'AI', N'AIA', 660, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (10, N'Antarctica', N'AQ', N'ATA', 10, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (11, N'Antigua and Barbuda', N'AG', N'ATG', 28, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (12, N'Argentina', N'AR', N'ARG', 32, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (13, N'Armenia', N'AM', N'ARM', 51, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (14, N'Aruba', N'AW', N'ABW', 533, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (15, N'Australia', N'AU', N'AUS', 36, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (16, N'Austria', N'AT', N'AUT', 40, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (17, N'Azerbaijan', N'AZ', N'AZE', 31, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (18, N'Bahamas', N'BS', N'BHS', 44, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (19, N'Bahrain', N'BH', N'BHR', 48, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (20, N'Bangladesh', N'BD', N'BGD', 50, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (21, N'Barbados', N'BB', N'BRB', 52, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (22, N'Belarus', N'BY', N'BLR', 112, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (23, N'Belgium', N'BE', N'BEL', 56, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (24, N'Belize', N'BZ', N'BLZ', 84, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (25, N'Benin', N'BJ', N'BEN', 204, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (26, N'Bermuda', N'BM', N'BMU', 60, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (27, N'Bhutan', N'BT', N'BTN', 64, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (28, N'Bolivia', N'BO', N'BOL', 68, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (29, N'Bosnia and Herzegowina', N'BA', N'BIH', 70, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (30, N'Botswana', N'BW', N'BWA', 72, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (31, N'Bouvet Island', N'BV', N'BVT', 74, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (32, N'Brazil', N'BR', N'BRA', 76, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (33, N'British Indian Ocean Territory', N'IO', N'IOT', 86, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (34, N'Brunei Darussalam', N'BN', N'BRN', 96, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (35, N'Bulgaria', N'BG', N'BGR', 100, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (36, N'Burkina Faso', N'BF', N'BFA', 854, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (37, N'Burundi', N'BI', N'BDI', 108, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (38, N'Cambodia', N'KH', N'KHM', 116, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (39, N'Cameroon', N'CM', N'CMR', 120, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (40, N'Cape Verde', N'CV', N'CPV', 132, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (41, N'Cayman Islands', N'KY', N'CYM', 136, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (42, N'Central African Republic', N'CF', N'CAF', 140, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (43, N'Chad', N'TD', N'TCD', 148, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (44, N'Chile', N'CL', N'CHL', 152, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (45, N'China', N'CN', N'CHN', 156, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (46, N'Christmas Island', N'CX', N'CXR', 162, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (47, N'Cocos (Keeling) Islands', N'CC', N'CCK', 166, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (48, N'Colombia', N'CO', N'COL', 170, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (49, N'Comoros', N'KM', N'COM', 174, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (50, N'Congo', N'CG', N'COG', 178, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (51, N'Congo (Democratic Republic of the)', N'CD', N'COD', 180, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (52, N'Cook Islands', N'CK', N'COK', 184, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (53, N'Costa Rica', N'CR', N'CRI', 188, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (54, N'Cote D''Ivoire', N'CI', N'CIV', 384, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (55, N'Croatia', N'HR', N'HRV', 191, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (56, N'Cuba', N'CU', N'CUB', 192, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (57, N'Cyprus', N'CY', N'CYP', 196, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (58, N'Czech Republic', N'CZ', N'CZE', 203, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (59, N'Denmark', N'DK', N'DNK', 208, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (60, N'Djibouti', N'DJ', N'DJI', 262, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (61, N'Dominica', N'DM', N'DMA', 212, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (62, N'Dominican Republic', N'DO', N'DOM', 214, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (63, N'East Timor', N'TL', N'TLS', 626, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (64, N'Ecuador', N'EC', N'ECU', 218, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (65, N'Egypt', N'EG', N'EGY', 818, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (66, N'El Salvador', N'SV', N'SLV', 222, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (67, N'Equatorial Guinea', N'GQ', N'GNQ', 226, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (68, N'Eritrea', N'ER', N'ERI', 232, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (69, N'Estonia', N'EE', N'EST', 233, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (70, N'Eswatini', N'SZ', N'SWZ', 748, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (71, N'Ethiopia', N'ET', N'ETH', 231, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (72, N'Falkland Islands (Malvinas)', N'FK', N'FLK', 238, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (73, N'Faroe Islands', N'FO', N'FRO', 234, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (74, N'Fiji', N'FJ', N'FJI', 242, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (75, N'Finland', N'FI', N'FIN', 246, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (76, N'France', N'FR', N'FRA', 250, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (77, N'French Guiana', N'GF', N'GUF', 254, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (78, N'French Polynesia', N'PF', N'PYF', 258, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (79, N'French Southern Territories', N'TF', N'ATF', 260, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (80, N'Gabon', N'GA', N'GAB', 266, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (81, N'Gambia', N'GM', N'GMB', 270, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (82, N'Georgia', N'GE', N'GEO', 268, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (83, N'Germany', N'DE', N'DEU', 276, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (84, N'Ghana', N'GH', N'GHA', 288, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (85, N'Gibraltar', N'GI', N'GIB', 292, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (86, N'Greece', N'GR', N'GRC', 300, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (87, N'Greenland', N'GL', N'GRL', 304, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (88, N'Grenada', N'GD', N'GRD', 308, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (89, N'Guadeloupe', N'GP', N'GLP', 312, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (90, N'Guam', N'GU', N'GUM', 316, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (91, N'Guatemala', N'GT', N'GTM', 320, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (92, N'Guinea', N'GN', N'GIN', 324, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (93, N'Guinea-bissau', N'GW', N'GNB', 624, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (94, N'Guyana', N'GY', N'GUY', 328, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (95, N'Haiti', N'HT', N'HTI', 332, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (96, N'Heard and Mc Donald Islands', N'HM', N'HMD', 334, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (97, N'Honduras', N'HN', N'HND', 340, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (98, N'Hong Kong', N'HK', N'HKG', 344, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (99, N'Hungary', N'HU', N'HUN', 348, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (100, N'Iceland', N'IS', N'ISL', 352, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (101, N'India', N'IN', N'IND', 356, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (102, N'Indonesia', N'ID', N'IDN', 360, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (103, N'Iran (Islamic Republic of)', N'IR', N'IRN', 364, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (104, N'Iraq', N'IQ', N'IRQ', 368, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (105, N'Ireland', N'IE', N'IRL', 372, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (106, N'Israel', N'IL', N'ISR', 376, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (107, N'Italy', N'IT', N'ITA', 380, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (108, N'Jamaica', N'JM', N'JAM', 388, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (109, N'Japan', N'JP', N'JPN', 392, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (110, N'Jordan', N'JO', N'JOR', 400, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (111, N'Kazakhstan', N'KZ', N'KAZ', 398, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (112, N'Kenya', N'KE', N'KEN', 404, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (113, N'Kiribati', N'KI', N'KIR', 296, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (114, N'Korea', N'KR', N'KOR', 410, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (115, N'Korea, Democratic People''s Republic of', N'KP', N'PRK', 408, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (116, N'Kuwait', N'KW', N'KWT', 414, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (117, N'Kyrgyzstan', N'KG', N'KGZ', 417, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (118, N'Lao People''s Democratic Republic', N'LA', N'LAO', 418, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (119, N'Latvia', N'LV', N'LVA', 428, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (120, N'Lebanon', N'LB', N'LBN', 422, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (121, N'Lesotho', N'LS', N'LSO', 426, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (122, N'Liberia', N'LR', N'LBR', 430, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (123, N'Libyan Arab Jamahiriya', N'LY', N'LBY', 434, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (124, N'Liechtenstein', N'LI', N'LIE', 438, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (125, N'Lithuania', N'LT', N'LTU', 440, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (126, N'Luxembourg', N'LU', N'LUX', 442, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (127, N'Macau', N'MO', N'MAC', 446, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (128, N'Macedonia', N'MK', N'MKD', 807, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (129, N'Madagascar', N'MG', N'MDG', 450, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (130, N'Malawi', N'MW', N'MWI', 454, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (131, N'Malaysia', N'MY', N'MYS', 458, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (132, N'Maldives', N'MV', N'MDV', 462, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (133, N'Mali', N'ML', N'MLI', 466, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (134, N'Malta', N'MT', N'MLT', 470, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (135, N'Marshall Islands', N'MH', N'MHL', 584, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (136, N'Martinique', N'MQ', N'MTQ', 474, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (137, N'Mauritania', N'MR', N'MRT', 478, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (138, N'Mauritius', N'MU', N'MUS', 480, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (139, N'Mayotte', N'YT', N'MYT', 175, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (140, N'Mexico', N'MX', N'MEX', 484, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (141, N'Micronesia', N'FM', N'FSM', 583, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (142, N'Moldova', N'MD', N'MDA', 498, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (143, N'Monaco', N'MC', N'MCO', 492, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (144, N'Mongolia', N'MN', N'MNG', 496, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (145, N'Montenegro', N'ME', N'MNE', 499, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (146, N'Montserrat', N'MS', N'MSR', 500, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (147, N'Morocco', N'MA', N'MAR', 504, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (148, N'Mozambique', N'MZ', N'MOZ', 508, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (149, N'Myanmar', N'MM', N'MMR', 104, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (150, N'Namibia', N'NA', N'NAM', 516, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (151, N'Nauru', N'NR', N'NRU', 520, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (152, N'Nepal', N'NP', N'NPL', 524, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (153, N'Netherlands', N'NL', N'NLD', 528, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (154, N'New Caledonia', N'NC', N'NCL', 540, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (155, N'New Zealand', N'NZ', N'NZL', 554, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (156, N'Nicaragua', N'NI', N'NIC', 558, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (157, N'Niger', N'NE', N'NER', 562, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (158, N'Nigeria', N'NG', N'NGA', 566, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (159, N'Niue', N'NU', N'NIU', 570, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (160, N'Norfolk Island', N'NF', N'NFK', 574, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (161, N'Northern Mariana Islands', N'MP', N'MNP', 580, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (162, N'Norway', N'NO', N'NOR', 578, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (163, N'Oman', N'OM', N'OMN', 512, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (164, N'Pakistan', N'PK', N'PAK', 586, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (165, N'Palau', N'PW', N'PLW', 585, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (166, N'Palestine', N'PS', N'PSE', 275, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (167, N'Panama', N'PA', N'PAN', 591, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (168, N'Papua New Guinea', N'PG', N'PNG', 598, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (169, N'Paraguay', N'PY', N'PRY', 600, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (170, N'Peru', N'PE', N'PER', 604, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (171, N'Philippines', N'PH', N'PHL', 608, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (172, N'Pitcairn', N'PN', N'PCN', 612, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (173, N'Poland', N'PL', N'POL', 616, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (174, N'Portugal', N'PT', N'PRT', 620, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (175, N'Puerto Rico', N'PR', N'PRI', 630, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (176, N'Qatar', N'QA', N'QAT', 634, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (177, N'Reunion', N'RE', N'REU', 638, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (178, N'Romania', N'RO', N'ROU', 642, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (179, N'Russian Federation', N'RU', N'RUS', 643, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (180, N'Rwanda', N'RW', N'RWA', 646, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (181, N'Saint Kitts and Nevis', N'KN', N'KNA', 659, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (182, N'Saint Lucia', N'LC', N'LCA', 662, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (183, N'Saint Vincent and the Grenadines', N'VC', N'VCT', 670, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (184, N'Samoa', N'WS', N'WSM', 882, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (185, N'San Marino', N'SM', N'SMR', 674, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (186, N'Sao Tome and Principe', N'ST', N'STP', 678, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (187, N'Saudi Arabia', N'SA', N'SAU', 682, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (188, N'Senegal', N'SN', N'SEN', 686, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (189, N'Serbia', N'RS', N'SRB', 688, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (190, N'Seychelles', N'SC', N'SYC', 690, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (191, N'Sierra Leone', N'SL', N'SLE', 694, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (192, N'Singapore', N'SG', N'SGP', 702, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (193, N'Slovakia (Slovak Republic)', N'SK', N'SVK', 703, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (194, N'Slovenia', N'SI', N'SVN', 705, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (195, N'Solomon Islands', N'SB', N'SLB', 90, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (196, N'Somalia', N'SO', N'SOM', 706, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (197, N'South Africa', N'ZA', N'ZAF', 710, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (198, N'South Georgia & South Sandwich Islands', N'GS', N'SGS', 239, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (199, N'South Sudan', N'SS', N'SSD', 728, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (200, N'Spain', N'ES', N'ESP', 724, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (201, N'Sri Lanka', N'LK', N'LKA', 144, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (202, N'St. Helena', N'SH', N'SHN', 654, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (203, N'St. Pierre and Miquelon', N'PM', N'SPM', 666, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (204, N'Sudan', N'SD', N'SDN', 736, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (205, N'Suriname', N'SR', N'SUR', 740, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (206, N'Svalbard and Jan Mayen Islands', N'SJ', N'SJM', 744, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (207, N'Sweden', N'SE', N'SWE', 752, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (208, N'Switzerland', N'CH', N'CHE', 756, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (209, N'Syrian Arab Republic', N'SY', N'SYR', 760, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (210, N'Taiwan', N'TW', N'TWN', 158, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (211, N'Tajikistan', N'TJ', N'TJK', 762, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (212, N'Tanzania', N'TZ', N'TZA', 834, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (213, N'Thailand', N'TH', N'THA', 764, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (214, N'Togo', N'TG', N'TGO', 768, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (215, N'Tokelau', N'TK', N'TKL', 772, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (216, N'Tonga', N'TO', N'TON', 776, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (217, N'Trinidad and Tobago', N'TT', N'TTO', 780, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (218, N'Tunisia', N'TN', N'TUN', 788, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (219, N'Turkey', N'TR', N'TUR', 792, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (220, N'Turkmenistan', N'TM', N'TKM', 795, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (221, N'Turks and Caicos Islands', N'TC', N'TCA', 796, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (222, N'Tuvalu', N'TV', N'TUV', 798, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (223, N'Uganda', N'UG', N'UGA', 800, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (224, N'Ukraine', N'UA', N'UKR', 804, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (225, N'United Arab Emirates', N'AE', N'ARE', 784, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (226, N'United Kingdom', N'GB', N'GBR', 826, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (227, N'United States minor outlying islands', N'UM', N'UMI', 581, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (228, N'Uruguay', N'UY', N'URY', 858, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (229, N'Uzbekistan', N'UZ', N'UZB', 860, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (230, N'Vanuatu', N'VU', N'VUT', 548, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (231, N'Vatican City State (Holy See)', N'VA', N'VAT', 336, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (232, N'Venezuela', N'VE', N'VEN', 862, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (233, N'Viet Nam', N'VN', N'VNM', 704, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (234, N'Virgin Islands (British)', N'VG', N'VGB', 92, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (235, N'Virgin Islands (U.S.)', N'VI', N'VIR', 850, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (236, N'Wallis and Futuna Islands', N'WF', N'WLF', 876, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (237, N'Western Sahara', N'EH', N'ESH', 732, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (238, N'Yemen', N'YE', N'YEM', 887, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (239, N'Zambia', N'ZM', N'ZMB', 894, 100)
+GO
+INSERT [dbo].[Country] ([Id], [Name], [TwoLetterIsoCode], [ThreeLetterIsoCode], [NumericIsoCode], [DisplayOrder]) VALUES (240, N'Zimbabwe', N'ZW', N'ZWE', 716, 100)
+GO
+SET IDENTITY_INSERT [dbo].[Country] OFF
+GO
+SET IDENTITY_INSERT [dbo].[ErrorLog] ON 
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (2, 0, N'', N'Attempted to divide by zero.', N'::1', N'', N'', CAST(N'2020-10-09T17:52:06.7939733' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (3, 0, N'', N'Attempted to divide by zero.', N'::1', N'', N'', CAST(N'2020-10-09T17:58:09.5433553' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (4, 0, N'', N'Unable to resolve service for type ''Microsoft.AspNetCore.Identity.UI.Services.IEmailSender'' while attempting to activate ''LogiticsWebApp.Areas.Identity.Pages.Account.RegisterModel''.', N'::1', N'', N'', CAST(N'2020-10-09T17:58:30.8586730' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (5, 0, N'', N'Unable to resolve service for type ''Microsoft.AspNetCore.Identity.UI.Services.IEmailSender'' while attempting to activate ''LogiticsWebApp.Areas.Identity.Pages.Account.RegisterModel''.', N'::1', N'', N'', CAST(N'2020-10-09T18:17:00.0576696' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (6, 0, N'', N'Unable to resolve service for type ''Microsoft.AspNetCore.Identity.UI.Services.IEmailSender'' while attempting to activate ''LogiticsWebApp.Areas.Identity.Pages.Account.RegisterModel''.', N'::1', N'', N'', CAST(N'2020-10-09T18:17:49.6220305' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (7, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-09T19:46:33.0860090' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (8, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-09T19:47:45.1541359' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (9, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-09T19:48:01.7125070' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (10, 0, N'', N'Invalid object name ''DriverViewModel''.', N'::1', N'', N'', CAST(N'2020-10-12T12:40:04.0709090' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (11, 0, N'', N'Invalid object name ''DriverViewModel''.', N'::1', N'', N'', CAST(N'2020-10-12T12:40:10.2306257' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (12, 0, N'', N'Invalid object name ''DriverViewModel''.', N'::1', N'', N'', CAST(N'2020-10-12T12:40:27.3130626' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (13, 0, N'', N'Invalid object name ''DriverViewModel''.', N'::1', N'', N'', CAST(N'2020-10-12T12:43:52.8342224' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (14, 0, N'', N'Invalid object name ''DriverViewModel''.', N'::1', N'', N'', CAST(N'2020-10-12T12:52:52.7911656' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (15, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-12T13:09:07.6144687' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (16, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-12T13:10:18.1182252' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (17, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-12T13:13:25.6892713' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (18, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-12T13:14:20.4297242' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (19, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-12T13:14:20.3098308' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (20, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-12T13:14:20.3097193' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (21, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-12T13:14:24.8252657' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (22, 0, N'', N'The method or operation is not implemented.', N'::1', N'', N'', CAST(N'2020-10-13T14:44:52.2301018' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (23, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-13T14:46:35.5111167' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (24, 0, N'', N'Multiple constructors accepting all given argument types have been found in type ''LogiticsWebApp.Areas.Identity.Pages.Account.RegisterModel''. There should only be one applicable constructor.', N'::1', N'', N'', CAST(N'2020-10-13T14:52:00.9386557' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (25, 0, N'', N'Missing icon in size 512x512 in manifest.json', N'::1', N'', N'', CAST(N'2020-10-17T13:46:44.1227372' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (26, 0, N'The INSERT statement conflicted with the FOREIGN KEY constraint "FK_IndustryType". The conflict occurred in database "LogisticWebApp", table "dbo.IndustryType", column ''Id''.
+The statement has been terminated.', N'An error occurred while updating the entries. See the inner exception for details.', N'::1', N'', N'', CAST(N'2020-10-17T15:02:58.7661107' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (27, 0, N'The INSERT statement conflicted with the FOREIGN KEY constraint "FK_IndustryType". The conflict occurred in database "LogisticWebApp", table "dbo.IndustryType", column ''Id''.
+The statement has been terminated.', N'An error occurred while updating the entries. See the inner exception for details.', N'::1', N'', N'', CAST(N'2020-10-17T15:04:00.3541995' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (28, 0, N'', N'Value cannot be null or empty. (Parameter ''normalizedRoleName'')', N'::1', N'', N'', CAST(N'2020-10-17T16:27:27.2902690' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (29, 0, N'', N'No service for type ''LogiticsWebApp.Repositories.CountryRepository'' has been registered.', N'::1', N'', N'', CAST(N'2020-10-17T16:55:09.2281670' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (30, 0, N'', N'No service for type ''LogiticsWebApp.Repositories.CountryRepository'' has been registered.', N'::1', N'', N'', CAST(N'2020-10-17T16:55:14.8775604' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (31, 0, N'', N'Value cannot be null or empty. (Parameter ''normalizedRoleName'')', N'::1', N'', N'', CAST(N'2020-10-17T18:13:13.2747568' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (32, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-17T21:51:38.5275249' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (33, 0, N'', N'Object reference not set to an instance of an object.', N'::1', N'', N'', CAST(N'2020-10-17T21:51:50.7048414' AS DateTime2), NULL)
+GO
+INSERT [dbo].[ErrorLog] ([Id], [LogLevelId], [ShortMessage], [FullMessage], [IpAddress], [LoggedUserId], [PageUrl], [AddedDate], [ModifiedDate]) VALUES (34, 0, N'', N'The model item passed into the ViewDataDictionary is of type ''LogiticsWebApp.Areas.Vendor.Models.DriverViewModel'', but this ViewDataDictionary instance requires a model item of type ''System.Collections.Generic.IEnumerable`1[LogiticsWebApp.Areas.Vendor.Models.DriverViewModel]''.', N'::1', N'', N'', CAST(N'2020-10-17T21:55:30.2384634' AS DateTime2), NULL)
+GO
+SET IDENTITY_INSERT [dbo].[ErrorLog] OFF
+GO
+SET IDENTITY_INSERT [dbo].[IndustryType] ON 
+GO
+INSERT [dbo].[IndustryType] ([Id], [Name]) VALUES (1, N'Products')
+GO
+INSERT [dbo].[IndustryType] ([Id], [Name]) VALUES (2, N'Services')
+GO
+SET IDENTITY_INSERT [dbo].[IndustryType] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Orders] ON 
+GO
+INSERT [dbo].[Orders] ([Id], [OrderNumber], [StatusId], [TrackingNumber], [Name], [Location], [Email], [Phone], [ShippingDetailId], [PaymentDetailId], [Dimension], [Weight], [VendorId], [CreatedOn], [CreatedBy], [ModifiedOn], [ModifiedBy]) VALUES (1, N'd30ffdc6-bb13-4661-816b-9501e53c09e5', 4, N'7772a38f-5999-4668-95d1-76cebc91bdc1', N'test', N'test', N'test@test.com', N'8522589636', 2, 2, N'64x85', N'test', N'593c7fe3-26a0-49d5-a8df-f46f509d6d0e', CAST(N'2020-10-26T19:58:57.333' AS DateTime), N'85f2de27-046b-4768-9d42-4cf7704d6c73', NULL, NULL)
+GO
+INSERT [dbo].[Orders] ([Id], [OrderNumber], [StatusId], [TrackingNumber], [Name], [Location], [Email], [Phone], [ShippingDetailId], [PaymentDetailId], [Dimension], [Weight], [VendorId], [CreatedOn], [CreatedBy], [ModifiedOn], [ModifiedBy]) VALUES (2, N'1291041c-22a0-488a-9e97-a6ebffc82a28', 3, N'f48e6828-6d86-4739-b2a3-75ee22c08c65', N'test02', N'test02', N'test02@test.com', N'8522589636', 3, 2, N'64x185', N'test', N'45557419-c5b3-4b62-b2a4-84333fb62d44', CAST(N'2020-10-26T19:58:57.333' AS DateTime), N'c2d5e495-919b-4d86-9490-f31f6a13f910', NULL, NULL)
+GO
+INSERT [dbo].[Orders] ([Id], [OrderNumber], [StatusId], [TrackingNumber], [Name], [Location], [Email], [Phone], [ShippingDetailId], [PaymentDetailId], [Dimension], [Weight], [VendorId], [CreatedOn], [CreatedBy], [ModifiedOn], [ModifiedBy]) VALUES (3, N'8a8f68e0-b235-47d1-b246-4571035ddc29', 2, N'b8c7da9e-58e6-461c-a5e8-2452bc885496', N'test03', N'test03', N'test03@test.com', N'8522589636', 2, 2, N'640x85', N'test', N'c15c7d43-0eba-486c-8a06-b65d99d3afcb', CAST(N'2020-10-26T19:58:57.333' AS DateTime), N'645deb5e-20b8-45a3-9ac8-5ba69c12abc9', NULL, NULL)
+GO
+INSERT [dbo].[Orders] ([Id], [OrderNumber], [StatusId], [TrackingNumber], [Name], [Location], [Email], [Phone], [ShippingDetailId], [PaymentDetailId], [Dimension], [Weight], [VendorId], [CreatedOn], [CreatedBy], [ModifiedOn], [ModifiedBy]) VALUES (4, N'b3c9a32b-8b5e-4bc4-9f2c-fb256755e5c4', 1, N'ad1e4895-e43f-4873-97ac-62ae54909a0f', N'test04', N'test04', N'test04@test.com', N'8522589636', 1, 1, N'68x85', N'test', N'8e7b1d54-c3e6-44e4-9abb-84e7d9ccc9f7', CAST(N'2020-10-26T19:58:57.333' AS DateTime), N'37ce9407-2c91-493f-93f2-0b63ab1c1a3f', NULL, NULL)
+GO
+INSERT [dbo].[Orders] ([Id], [OrderNumber], [StatusId], [TrackingNumber], [Name], [Location], [Email], [Phone], [ShippingDetailId], [PaymentDetailId], [Dimension], [Weight], [VendorId], [CreatedOn], [CreatedBy], [ModifiedOn], [ModifiedBy]) VALUES (5, N'4Q2Z6OF13E6SDVNMCYLPOQ', 2, N'CIBX0HFBKUWEC89AHDVROQ', N'test test', N'test', N'raahulshrivastava0@gmail.com', N'4039734821', 2, 2, N'334', N'43434', N'24f46493-33ae-499d-a3cd-904ebed333c9', CAST(N'2020-11-02T17:44:17.220' AS DateTime), N'24f46493-33ae-499d-a3cd-904ebed333c9', NULL, NULL)
+GO
+INSERT [dbo].[Orders] ([Id], [OrderNumber], [StatusId], [TrackingNumber], [Name], [Location], [Email], [Phone], [ShippingDetailId], [PaymentDetailId], [Dimension], [Weight], [VendorId], [CreatedOn], [CreatedBy], [ModifiedOn], [ModifiedBy]) VALUES (6, N'BQRIYOA64EKCCHTVWCY8ZW', 1, N'PMXIIT4BFUAIEYADFHGFDW', N'test', N'test', N'test0222@test.com', N'4444444444', 1, 1, N'test', N'test', N'24f46493-33ae-499d-a3cd-904ebed333c9', CAST(N'2020-11-02T18:46:15.080' AS DateTime), N'24f46493-33ae-499d-a3cd-904ebed333c9', NULL, NULL)
+GO
+INSERT [dbo].[Orders] ([Id], [OrderNumber], [StatusId], [TrackingNumber], [Name], [Location], [Email], [Phone], [ShippingDetailId], [PaymentDetailId], [Dimension], [Weight], [VendorId], [CreatedOn], [CreatedBy], [ModifiedOn], [ModifiedBy]) VALUES (7, N'DGKBMNFJVKYSHI0BM3UYKG', 1, N'JIKAA7N7KEK3TVXORC8W4Q', N'test0001', N'test', N'test@test.com', N'8522589636', 2, 1, N'64x85', N'test', N'24f46493-33ae-499d-a3cd-904ebed333c9', CAST(N'2020-11-02T21:55:54.407' AS DateTime), N'24f46493-33ae-499d-a3cd-904ebed333c9', NULL, NULL)
+GO
+SET IDENTITY_INSERT [dbo].[Orders] OFF
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'cb4812fc-f720-4715-b43f-1fbf78943d6c', N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'61e871c2-85e5-4da7-acfc-4a4ddc6d1781')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'fbf63003-c971-4323-9b33-21e881cbde8c', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'e6f49096-7ddf-4b9e-b1d0-24a72584e316')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'ec8d45f8-24e5-4fd2-b40e-29ab7f0893ec', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'aaf82030-b13f-49d9-84ba-e25ede603ef8')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'5c0ddd0c-b069-4a41-ba2e-3135f8ae7ded', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'4cff4387-103f-4c4c-b35b-28db2b835c19')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'93f053e5-3e66-443c-b1b7-329344f3a33f', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'c3cd9e09-9836-4f73-a01b-110c299b87f2')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'9c694100-7b07-46ea-9f49-33d424792c3f', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'08fb20cc-57d9-4d89-9678-3a29939943fd')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'feacdc3a-1cb3-4aa9-8df0-38ba209c7c18', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'8bfee0f7-1b07-433b-9f2e-392df038461d')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'fe0fd225-260d-46db-97c2-3a8b3f94763d', N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'198585b9-f4cb-406d-97d3-57acda61300e')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'232bb8c8-3192-46e2-b1d0-43addd96995a', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'5d26557e-d327-43fb-8e67-29aeab07d4d8')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'83845afe-1dea-42ba-b3bd-6644df156d53', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'b2ebbed3-aec5-427a-89e0-75844d35c823')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'98d47d7f-1a48-43e5-ac12-7059d01feccc', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'089b3d88-4ab5-4cc8-940b-f01621f1c11a')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'5f19d193-dd08-4bb6-8975-803f42651dbd', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'cab2617f-b9d4-407c-a839-b1e046977657')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'501baefd-a603-4668-bad9-902f2fe13c56', N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'81b68f13-b12c-4329-a50c-4801f39c99e1')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'436c5aa9-6e86-4a89-a911-98f909c10a90', N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'4d0e8b57-96aa-4201-a584-bac32460c5db')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'26a093d2-993e-46da-bc48-9e5908a3cb6c', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'07938cc6-f68f-46bd-8caa-5ca8686a5f37')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'64dc890a-ab89-4367-9edb-9ef3c7c556f5', N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'0e7903eb-e2f8-44a0-9bb6-84a341524247')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'52290491-a423-4c28-8cd4-a0699c923fe9', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'25cef1b7-fba3-42df-a606-5fb2b733ab33')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'12b9d3a5-f718-46c7-9ea6-ce59bec0df56', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'91a9aba7-a208-4063-bb44-47af9d1f5625')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'd5779c5c-ecd7-4d40-aa38-da6d167da897', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'cd0a2277-1daf-4bc0-8d6b-dcd00364ce7f')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'd41fda17-4898-43e7-b3b0-daf1200a93c3', N'24f46493-33ae-499d-a3cd-904ebed333c9', N'f2453af1-a0a1-4631-8886-1a0fe1d87bcf')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'86351073-7422-4897-90d8-f0f14476e6ac', N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'18895605-7b5e-419a-83bf-ed2d7b782f56')
+GO
+INSERT [dbo].[VendorsDriverMap] ([Id], [VendorId], [DriverId]) VALUES (N'514a4495-363c-468f-a4a2-fc4241d7a2d6', N'5214cfd0-3521-42f9-ace4-6e0fff976506', N'e3c5f023-56de-4f56-b531-610832fa1a57')
+GO
